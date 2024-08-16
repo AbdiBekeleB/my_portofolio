@@ -3,7 +3,6 @@ import crud from "../Assets/Portfolio/crud.jpg";
 import patient from "../Assets/Portfolio/Patient.png";
 import ims from "../Assets/Portfolio/ims.png";
 import company from "../Assets/Portfolio/company.jpg";
-import { Link } from "react-scroll";
 
 const Portfolio = () => {
   const portfolios = [
@@ -42,7 +41,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div name = 'portfolio' className="portfolio-container px-5">
+    <div name='portfolio' className="portfolio-container px-5">
       <p className="display-3 font-weight-bold border-bottom border-light d-inline-block custom-font custom-heading">
         Portfolio
       </p>
@@ -69,12 +68,12 @@ const Portfolio = () => {
                 </div>
                 <div className="card-body text-center">
                   <div className="d-flex flex-column flex-md-row justify-content-between">
-                    <Link to={demoLink} target="_blank" rel="noreferrer" className="btn btn-primary w-100 mb-2 mb-md-0 me-md-2">
+                    <a href={demoLink} target="_blank" rel="noreferrer" className="btn btn-primary w-100 mb-2 mb-md-0 me-md-2">
                       Demo
-                    </Link>
-                    <Link to={codeLink} target="_blank" rel="noreferrer" className="btn btn-secondary w-100 ms-md-2">
+                    </a>
+                    <a href={codeLink} target="_blank" rel="noreferrer" className="btn btn-secondary w-100 ms-md-2">
                       Code
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

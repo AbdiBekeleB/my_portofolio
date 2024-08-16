@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="bg-dark text-light d-flex align-items-center min-vh-100 pb-5 pt-2">
+    <div name="home" className="bg-dark text-light d-flex align-items-center min-vh-100 pb-5">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
@@ -25,7 +25,7 @@ const Home = () => {
             </Link>
           </div>
           <div className="col-lg-6">
-            <div className="d-flex justify-content-center justify-content-lg-end mb-5">
+            <div className="d-flex justify-content-center justify-content-lg-end">
               <img
                 src={hero}
                 alt="my profile"

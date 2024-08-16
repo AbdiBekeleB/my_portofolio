@@ -19,7 +19,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="bg-dark d-flex flex-column justify-content-center align-items-center"
+      className="bg-dark d-flex flex-column justify-content-center align-items-center pt-3 pb-5"
     >
       <div className="text-center">
         <h2 className="display-3 font-weight-bold border-bottom border-light d-inline-block custom-font custom-heading">
@@ -28,11 +28,11 @@ const Experience = () => {
         <p className="py-1 custom-paragraph text-center">
           These are the technologies I have worked with:
         </p>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center px-4">
           {techs.map(({ id, src, title }) => (
             <div
               key={id}
-              className="col-6 col-lg-4 mb-3 d-flex flex-column align-items-center"
+              className="col-5 col-lg-3 mb-3 d-flex flex-column align-items-center"
             >
               <div className="card shadow-lg border-0 p-2 hover-scale card-custom">
                 <img

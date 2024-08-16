@@ -2,16 +2,16 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div name='contact' className='bg-dark py-2'>
+    <div name='contact' className='bg-dark pb-3'>
       <div className='container'>
         <div className='row justify-content-center'>
           <div className='col-lg-6'>
             <div className='text-center mb-5'>
               <h2 className='display-3 font-weight-bold border-bottom border-light d-inline-block custom-font custom-heading'>
-                Contact Us
+                Contact Me
               </h2>
               <p className='pt-1 custom-paragraph text-center'>
-                Submit the form below to get in touch with us.
+                Submit the form below to get in touch with me.
               </p>
             </div>
             <div className='bg-light p-5 border border-primary rounded-4 shadow-lg'>

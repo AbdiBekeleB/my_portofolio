@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import abdi from '../Assets/abdi.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,19 +20,14 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-md navbar-dark py-3 shadow-lg">
       <div className="container">
-        
-          <span
-            className="navbar-brand fw-bold text-uppercase text-warning"
-            style={{
-              fontFamily: "Kaushan Script, cursive",
-              fontSize: "2rem",
-              letterSpacing: "1px",
-              marginRight: "0.25rem",
-            }}
-          >
-            𝓐𝓑𝓓𝓘
-          </span>
-        
+        <img
+          src={abdi}
+          alt="Brand Logo"
+          className="navbar-brand"
+          style={{
+            height: "50px"
+          }}
+        />
         <button
           className="navbar-toggler"
           type="button"
