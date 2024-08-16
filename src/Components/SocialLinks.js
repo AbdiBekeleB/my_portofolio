@@ -34,28 +34,28 @@ const SocialLinks = () => {
   const links = [
     {
       id: 1,
-      icon: <FaLinkedin size={30} />,
+      icon: <FaLinkedin size={isSmallScreen ? 20 : 30} />,
       name: "LinkedIn",
       href: "https://www.linkedin.com/in/abdi-bekele-beyene/",
       style: "rounded-top-left",
     },
     {
       id: 2,
-      icon: <FaGithub size={30} />,
+      icon: <FaGithub size={isSmallScreen ? 20 : 30} />,
       name: "GitHub",
       href: "https://github.com/AbdiBekeleB",
       style: "rounded-top-left",
     },
     {
       id: 3,
-      icon: <HiOutlineMail size={30} />,
+      icon: <HiOutlineMail size={isSmallScreen ? 20 : 30} />,
       name: "Mail",
       href: "mailto:abdibekelebeyene@gmail.com",
       style: "rounded-top-left",
     },
     {
       id: 4,
-      icon: <BsFillPersonLinesFill size={30} />,
+      icon: <BsFillPersonLinesFill size={isSmallScreen ? 20 : 30} />,
       name: "Resume",
       href: "/resume.pdf",
       style: "rounded-bottom-left",
@@ -63,13 +63,11 @@ const SocialLinks = () => {
     },
   ];
 
-  if (isSmallScreen) return null;
-
   return (
     <div
       className={`social-links d-flex flex-column position-fixed top-50 start-0 translate-middle-y ${
         showLinks ? "show" : "hide"
-      }`}
+      } ${isSmallScreen ? "small-screen" : ""}`}
     >
       <ul className="list-unstyled">
         {links.map(({ id, icon, name, href, style, download }) => (
